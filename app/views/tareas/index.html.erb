@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tareas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tarnombre</th>
+      <th>Tarestado</th>
+      <th>Tarfechacreacion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tareas.each do |tarea| %>
+      <tr>
+        <td><%= tarea.tarnombre %></td>
+        <td><%= tarea.tarestado %></td>
+        <td><%= tarea.tarfechacreacion %></td>
+        <td><%= link_to 'Show', tarea %></td>
+        <td><%= link_to 'Edit', edit_tarea_path(tarea) %></td>
+        <td><%= link_to 'Destroy', tarea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tarea', new_tarea_path %>

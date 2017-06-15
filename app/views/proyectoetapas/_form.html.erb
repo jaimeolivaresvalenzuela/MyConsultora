@@ -1,0 +1,41 @@
+<%= form_for(@proyectoetapa) do |f| %>
+  <% if @proyectoetapa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@proyectoetapa.errors.count, "error") %> prohibited this proyectoetapa from being saved:</h2>
+
+      <ul>
+      <% @proyectoetapa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :etaid %><br>
+    <%= f.number_field :etaid %>
+  </div>
+  <div class="field">
+    <%= f.label :ropeid %><br>
+    <%= f.number_field :ropeid %>
+  </div>
+  <div class="field">
+    <%= f.label :proid %><br>
+    <%= f.number_field :proid %>
+  </div>
+  <div class="field">
+    <%= f.label :pretestado %><br>
+    <%= f.text_field :pretestado %>
+  </div>
+  <div class="field">
+    <%= f.label :pretfechacreacion %><br>
+    <%= f.date_select :pretfechacreacion %>
+  </div>
+  <div class="field">
+    <%= f.label :pretdescripcion %><br>
+    <%= f.text_area :pretdescripcion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

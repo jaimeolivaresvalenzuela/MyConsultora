@@ -1,0 +1,37 @@
+<%= form_for(@rolpersona) do |f| %>
+  <% if @rolpersona.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rolpersona.errors.count, "error") %> prohibited this rolpersona from being saved:</h2>
+
+      <ul>
+      <% @rolpersona.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :perid %><br>
+    <%= f.number_field :perid %>
+  </div>
+  <div class="field">
+    <%= f.label :rolid %><br>
+    <%= f.number_field :rolid %>
+  </div>
+  <div class="field">
+    <%= f.label :ropeestado %><br>
+    <%= f.text_field :ropeestado %>
+  </div>
+  <div class="field">
+    <%= f.label :ropefechacreacion %><br>
+    <%= f.date_select :ropefechacreacion %>
+  </div>
+  <div class="field">
+    <%= f.label :ropedescripcion %><br>
+    <%= f.text_area :ropedescripcion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

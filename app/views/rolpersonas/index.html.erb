@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rolpersonas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Perid</th>
+      <th>Rolid</th>
+      <th>Ropeestado</th>
+      <th>Ropefechacreacion</th>
+      <th>Ropedescripcion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rolpersonas.each do |rolpersona| %>
+      <tr>
+        <td><%= rolpersona.perid %></td>
+        <td><%= rolpersona.rolid %></td>
+        <td><%= rolpersona.ropeestado %></td>
+        <td><%= rolpersona.ropefechacreacion %></td>
+        <td><%= rolpersona.ropedescripcion %></td>
+        <td><%= link_to 'Show', rolpersona %></td>
+        <td><%= link_to 'Edit', edit_rolpersona_path(rolpersona) %></td>
+        <td><%= link_to 'Destroy', rolpersona, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rolpersona', new_rolpersona_path %>

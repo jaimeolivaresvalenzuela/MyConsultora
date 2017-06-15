@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  perid: 1
+  rolid: 1
+  ropeestado: MyString
+  ropefechacreacion: 2017-06-06
+  ropedescripcion: MyText
+
+two:
+  perid: 1
+  rolid: 1
+  ropeestado: MyString
+  ropefechacreacion: 2017-06-06
+  ropedescripcion: MyText

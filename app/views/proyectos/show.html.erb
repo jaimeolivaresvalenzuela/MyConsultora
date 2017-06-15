@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ropeid:</strong>
+  <%= @proyecto.ropeid %>
+</p>
+
+<p>
+  <strong>Cueid:</strong>
+  <%= @proyecto.cueid %>
+</p>
+
+<p>
+  <strong>Pronombre:</strong>
+  <%= @proyecto.pronombre %>
+</p>
+
+<p>
+  <strong>Proestado:</strong>
+  <%= @proyecto.proestado %>
+</p>
+
+<p>
+  <strong>Profechacreacion:</strong>
+  <%= @proyecto.profechacreacion %>
+</p>
+
+<p>
+  <strong>Prodescripcion:</strong>
+  <%= @proyecto.prodescripcion %>
+</p>
+
+<%= link_to 'Edit', edit_proyecto_path(@proyecto) %> |
+<%= link_to 'Back', proyectos_path %>

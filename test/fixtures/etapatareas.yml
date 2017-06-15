@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pretid: 1
+  tarid: 1
+  ropeid: 1
+  ettaestado: MyString
+  ettafechacreacion: 2017-06-06
+  ettadescripcion: MyText
+
+two:
+  pretid: 1
+  tarid: 1
+  ropeid: 1
+  ettaestado: MyString
+  ettafechacreacion: 2017-06-06
+  ettadescripcion: MyText

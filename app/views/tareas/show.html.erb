@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tarnombre:</strong>
+  <%= @tarea.tarnombre %>
+</p>
+
+<p>
+  <strong>Tarestado:</strong>
+  <%= @tarea.tarestado %>
+</p>
+
+<p>
+  <strong>Tarfechacreacion:</strong>
+  <%= @tarea.tarfechacreacion %>
+</p>
+
+<%= link_to 'Edit', edit_tarea_path(@tarea) %> |
+<%= link_to 'Back', tareas_path %>

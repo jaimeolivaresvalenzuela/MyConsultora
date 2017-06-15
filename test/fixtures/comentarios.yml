@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ettaid: 1
+  proid: 1
+  pretid: 1
+  comcomentario: MyText
+  comestado: MyString
+  comfechacreacion: 2017-06-06
+
+two:
+  ettaid: 1
+  proid: 1
+  pretid: 1
+  comcomentario: MyText
+  comestado: MyString
+  comfechacreacion: 2017-06-06

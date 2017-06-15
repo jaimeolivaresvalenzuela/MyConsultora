@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Etanombre:</strong>
+  <%= @etapa.etanombre %>
+</p>
+
+<p>
+  <strong>Etaestado:</strong>
+  <%= @etapa.etaestado %>
+</p>
+
+<p>
+  <strong>Etafechacreacion:</strong>
+  <%= @etapa.etafechacreacion %>
+</p>
+
+<%= link_to 'Edit', edit_etapa_path(@etapa) %> |
+<%= link_to 'Back', etapas_path %>

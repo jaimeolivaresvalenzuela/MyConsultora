@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clinombre: MyString
+  clirazonsocial: MyString
+  clidireccion: MyString
+  clirut: 9.99
+  clidv: MyString
+  cliestado: MyString
+  clifechacreacion: 2017-06-06
+
+two:
+  clinombre: MyString
+  clirazonsocial: MyString
+  clidireccion: MyString
+  clirut: 9.99
+  clidv: MyString
+  cliestado: MyString
+  clifechacreacion: 2017-06-06

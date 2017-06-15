@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tarnombre: MyString
+  tarestado: MyString
+  tarfechacreacion: 2017-06-06
+
+two:
+  tarnombre: MyString
+  tarestado: MyString
+  tarfechacreacion: 2017-06-06

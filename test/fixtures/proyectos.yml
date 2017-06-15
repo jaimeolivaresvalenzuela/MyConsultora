@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ropeid: 1
+  cueid: 1
+  pronombre: MyString
+  proestado: MyString
+  profechacreacion: 2017-06-06
+  prodescripcion: MyText
+
+two:
+  ropeid: 1
+  cueid: 1
+  pronombre: MyString
+  proestado: MyString
+  profechacreacion: 2017-06-06
+  prodescripcion: MyText

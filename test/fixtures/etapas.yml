@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  etanombre: MyString
+  etaestado: MyString
+  etafechacreacion: 2017-06-06
+
+two:
+  etanombre: MyString
+  etaestado: MyString
+  etafechacreacion: 2017-06-06

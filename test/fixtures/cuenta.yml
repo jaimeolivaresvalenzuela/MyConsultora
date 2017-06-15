@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ropeid: 1
+  cliid: 1
+  cuenombre: MyString
+  cueestado: MyString
+  cuefechacreacion: 2017-06-06
+
+two:
+  ropeid: 1
+  cliid: 1
+  cuenombre: MyString
+  cueestado: MyString
+  cuefechacreacion: 2017-06-06

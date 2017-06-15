@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cliid: 1
+  connombre: MyString
+  conapellidopaterno: MyString
+  conapellidomaterno: MyString
+  concargo: MyString
+  contelefono: 9.99
+  conmail: MyString
+  conestado: MyString
+  confechacreacion: 2017-06-06
+
+two:
+  cliid: 1
+  connombre: MyString
+  conapellidopaterno: MyString
+  conapellidomaterno: MyString
+  concargo: MyString
+  contelefono: 9.99
+  conmail: MyString
+  conestado: MyString
+  confechacreacion: 2017-06-06

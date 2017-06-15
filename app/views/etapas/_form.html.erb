@@ -1,0 +1,29 @@
+<%= form_for(@etapa) do |f| %>
+  <% if @etapa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@etapa.errors.count, "error") %> prohibited this etapa from being saved:</h2>
+
+      <ul>
+      <% @etapa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :etanombre %><br>
+    <%= f.text_field :etanombre %>
+  </div>
+  <div class="field">
+    <%= f.label :etaestado %><br>
+    <%= f.text_field :etaestado %>
+  </div>
+  <div class="field">
+    <%= f.label :etafechacreacion %><br>
+    <%= f.date_select :etafechacreacion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
