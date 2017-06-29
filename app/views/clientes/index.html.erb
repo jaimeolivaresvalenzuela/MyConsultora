@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Clientes</h1>
-
+<%= link_to 'New Todo', new_todo_path, class: 'btn btn-success' %>
 <table>
   <thead>
     <tr>
@@ -17,6 +17,7 @@
   </thead>
 
   <tbody>
+
     <% @clientes.each do |cliente| %>
       <tr>
         <td><%= cliente.clinombre %></td>

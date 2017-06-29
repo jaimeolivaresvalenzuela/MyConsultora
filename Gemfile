@@ -18,6 +18,8 @@ gem 'rake', '~> 12.0'
 gem 'annotate', '~> 2.7', '>= 2.7.1'
 gem 'rmre', '~> 0.0.9'
 gem 'schema_to_scaffold', '~> 0.8.0'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
