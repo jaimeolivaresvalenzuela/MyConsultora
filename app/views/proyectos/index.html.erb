@@ -2,7 +2,7 @@
 
 <h1>Listing Proyectos</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>ROL PERSONA</th>
@@ -24,9 +24,9 @@
         <td><%= proyecto.proestado %></td>
         <td><%= proyecto.profechacreacion %></td>
         <td><%= proyecto.prodescripcion %></td>
-        <td><%= link_to 'Show', proyecto %></td>
-        <td><%= link_to 'Edit', edit_proyecto_path(proyecto) %></td>
-        <td><%= link_to 'Destroy', proyecto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Show', proyecto %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_proyecto_path(proyecto) %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Destroy', proyecto, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Proyecto', new_proyecto_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Proyecto', new_proyecto_path %></button>

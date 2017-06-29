@@ -2,7 +2,7 @@
 
 <h1>Listing Rolpersonas</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Perid</th>
@@ -22,9 +22,9 @@
         <td><%= rolpersona.ropeestado %></td>
         <td><%= rolpersona.ropefechacreacion %></td>
         <td><%= rolpersona.ropedescripcion %></td>
-        <td><%= link_to 'Show', rolpersona %></td>
-        <td><%= link_to 'Edit', edit_rolpersona_path(rolpersona) %></td>
-        <td><%= link_to 'Destroy', rolpersona, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Show', rolpersona %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_rolpersona_path(rolpersona) %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Destroy', rolpersona, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Rolpersona', new_rolpersona_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Rolpersona', new_rolpersona_path %></button>

@@ -2,7 +2,7 @@
 
 <h1>Listing Etapas</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Nombre Etapa</th>
@@ -18,9 +18,9 @@
         <td><%= etapa.etanombre %></td>
         <td><%= etapa.etaestado %></td>
         <td><%= etapa.etafechacreacion %></td>
-        <td><%= link_to 'Show', etapa %></td>
-        <td><%= link_to 'Edit', edit_etapa_path(etapa) %></td>
-        <td><%= link_to 'Destroy', etapa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Show', etapa %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_etapa_path(etapa) %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Destroy', etapa, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Etapa', new_etapa_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Etapa', new_etapa_path %></button>

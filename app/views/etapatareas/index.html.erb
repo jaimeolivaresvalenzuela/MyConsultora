@@ -2,7 +2,7 @@
 
 <h1>Listing Etapatareas</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Proyecto</th>
@@ -24,9 +24,9 @@
         <td><%= etapatarea.ettaestado %></td>
         <td><%= etapatarea.ettafechacreacion %></td>
         <td><%= etapatarea.ettadescripcion %></td>
-        <td><%= link_to 'Show', etapatarea %></td>
-        <td><%= link_to 'Edit', edit_etapatarea_path(etapatarea) %></td>
-        <td><%= link_to 'Destroy', etapatarea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Show', etapatarea %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_etapatarea_path(etapatarea) %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Destroy', etapatarea, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Etapatarea', new_etapatarea_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Etapatarea', new_etapatarea_path %></button>

@@ -2,7 +2,7 @@
 
 <h1>Listing Cuenta</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Rol Persona</th>
@@ -22,9 +22,9 @@
         <td><%= cuentum.cuenombre %></td>
         <td><%= cuentum.cueestado %></td>
         <td><%= cuentum.cuefechacreacion %></td>
-        <td><%= link_to 'Show', cuentum %></td>
-        <td><%= link_to 'Edit', edit_cuentum_path(cuentum) %></td>
-        <td><%= link_to 'Destroy', cuentum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Show', cuentum %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_cuentum_path(cuentum) %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Destroy', cuentum, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Cuentum', new_cuentum_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Cuentum', new_cuentum_path %></button>

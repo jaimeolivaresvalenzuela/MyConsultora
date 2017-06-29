@@ -2,7 +2,7 @@
 
 <h1>Listing Rols</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Rolnombre</th>
@@ -18,9 +18,9 @@
         <td><%= rol.rolnombre %></td>
         <td><%= rol.rolestado %></td>
         <td><%= rol.rolfechacreacion %></td>
-        <td><%= link_to 'Show', rol %></td>
-        <td><%= link_to 'Edit', edit_rol_path(rol) %></td>
-        <td><%= link_to 'Destroy', rol, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Show', rol %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_rol_path(rol) %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Destroy', rol, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Rol', new_rol_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Rol', new_rol_path %></button>

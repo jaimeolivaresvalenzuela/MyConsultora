@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Clientes</h1>
-<%= link_to 'New Todo', new_todo_path, class: 'btn btn-success' %>
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Nombre</th>
@@ -27,9 +26,9 @@
         <td><%= cliente.clidv %></td>
         <td><%= cliente.cliestado %></td>
         <td><%= cliente.clifechacreacion %></td>
-        <td><%= link_to 'Show', cliente %></td>
-        <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
-        <td><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Show', cliente %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_cliente_path(cliente) %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -37,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Cliente', new_cliente_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Cliente', new_cliente_path %></button>

@@ -2,7 +2,7 @@
 
 <h1>Listing Comentarios</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>TAREA DEL PROYECTO </th>
@@ -24,9 +24,9 @@
         <td><%= comentario.comcomentario %></td>
         <td><%= comentario.comestado %></td>
         <td><%= comentario.comfechacreacion %></td>
-        <td><%= link_to 'Show', comentario %></td>
-        <td><%= link_to 'Edit', edit_comentario_path(comentario) %></td>
-        <td><%= link_to 'Destroy', comentario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Show', comentario %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_comentario_path(comentario) %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Destroy', comentario, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Comentario', new_comentario_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Comentario', new_comentario_path %></button>

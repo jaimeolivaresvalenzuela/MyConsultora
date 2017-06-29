@@ -2,7 +2,7 @@
 
 <h1>Listing Personas</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>RUT</th>
@@ -32,9 +32,9 @@
         <td><%= persona.percargo %></td>
         <td><%= persona.perestado %></td>
         <td><%= persona.perfechacreacion %></td>
-        <td><%= link_to 'Show', persona %></td>
-        <td><%= link_to 'Edit', edit_persona_path(persona) %></td>
-        <td><%= link_to 'Destroy', persona, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Show', persona %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_persona_path(persona) %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Destroy', persona, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -42,4 +42,4 @@
 
 <br>
 
-<%= link_to 'New Persona', new_persona_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Persona', new_persona_path %></button>

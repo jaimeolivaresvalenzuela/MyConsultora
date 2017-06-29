@@ -3,7 +3,7 @@
 <h1>Listing Contactos</h1>
 
 <table>
-  <thead>
+<table class="table">
     <tr>
       <th>ID CLIENTE</th>
       <th>NOMBRE</th>
@@ -30,9 +30,9 @@
         <td><%= contacto.conmail %></td>
         <td><%= contacto.conestado %></td>
         <td><%= contacto.confechacreacion %></td>
-        <td><%= link_to 'Show', contacto %></td>
-        <td><%= link_to 'Edit', edit_contacto_path(contacto) %></td>
-        <td><%= link_to 'Destroy', contacto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><td><button type="button" class="btn btn-default"><%= link_to 'Show', contacto %></button></td>
+        <td><td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_contacto_path(contacto) %></button></td>
+        <td><td><button type="button" class="btn btn-default"><%= link_to 'Destroy', contacto, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -40,4 +40,4 @@
 
 <br>
 
-<%= link_to 'New Contacto', new_contacto_path %>
+<td><button type="button" class="btn btn-default"><%= link_to 'New Contacto', new_contacto_path %></button>

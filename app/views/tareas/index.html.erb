@@ -2,7 +2,7 @@
 
 <h1>Listing Tareas</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Tarnombre</th>
@@ -18,9 +18,9 @@
         <td><%= tarea.tarnombre %></td>
         <td><%= tarea.tarestado %></td>
         <td><%= tarea.tarfechacreacion %></td>
-        <td><%= link_to 'Show', tarea %></td>
-        <td><%= link_to 'Edit', edit_tarea_path(tarea) %></td>
-        <td><%= link_to 'Destroy', tarea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Show', tarea %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_tarea_path(tarea) %></button></td>
+        <td><button type="button" class="btn btn-default"><%= link_to 'Destroy', tarea, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Tarea', new_tarea_path %>
+<button type="button" class="btn btn-default"><%= link_to 'New Tarea', new_tarea_path %></button>
